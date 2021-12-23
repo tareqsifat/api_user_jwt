@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Route::group(['prefix' => 'internal', 'middleware' => ['jwt.verify','admin']], function(){
+//     Route::get('sockets/serve', function(){
+//         \Illuminate\Support\Facades\Artisan::call('websockets:serve');
+//     });
+// });
+
 Route::get('/', function () {
     return view('welcome');
 });
